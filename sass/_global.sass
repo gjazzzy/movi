@@ -1,0 +1,38 @@
+.link-line
+    padding-bottom: 5px
+    position: relative
+    text-decoration: none
+    color: #fff
+    &::before
+        content: ''
+        position: absolute
+        width: 0%
+        right: 0
+        bottom: 0
+        height: 2px
+        background-color: #ffffff
+        transition: 0.4s
+    &:hover::before
+        width: 100%
+        left: 0
+.container
+    max-width: 1900px
+    margin: 0 auto
+    padding: 0px 24px
+
+.main__wrap //(container)
+    display: flex
+    max-width: 1920px
+    margin: 0 auto
+    padding: 0px 24px
+
+.play-button
+    border-radius: 50%
+    align-items: center
+    color: #ffffff
+    background: #ffffff5b
+    width: 81px
+    height: 81px
+    border: 0
+    cursor: pointer
+    justify-content: center

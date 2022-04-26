@@ -1,0 +1,304 @@
+// Базовые настройки 
+@import 'reset'
+
+//Шрифты
+@import 'fonts'
+
+// Глобал
+@import 'global'
+
+//header
+.header
+    background: #17161B
+    margin-bottom: 80px
+    +medium
+    align-items: center
+
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 30px 0px 15px 0px
+        position: relative
+    &__wrap::before
+        content: ''
+        bottom: 0
+        position: absolute
+        width: 100%
+        height: 1px
+        box-shadow: 1px 1px 3px #49484d
+
+    &__logo
+        width: 221px
+        height: 75px
+    &__logo:hover
+        transform: scale(1.1)
+
+    &__nav
+        display: flex
+        align-items: center
+    &__item:not(:last-child)
+        margin-right: 25px
+
+    &__menu
+        display: flex
+        align-items: center
+    &__time
+        +regular
+        margin: 0px 86px 0px 39px
+        display: flex
+        flex-direction: column
+        color: #fff
+    &__day-item
+        font-size: 12px
+        line-height: 14px
+
+    &__user-btn
+        border-radius: 100px
+        background: url('../image/icon.svg/avatar.png') 0 /100% no-repeat
+        border: 2px solid #fff
+        width: 60px
+        height: 60px
+    &__user-btn:hover
+        transform: scale(1.1)
+
+// form header
+.form__input
+    position: relative
+    display: flex
+    bottom: none
+    width: 330px
+    height: 41px
+
+.input__search
+    background-color: #2B2A2F
+    color: #ffffff
+    width: 100%
+    border-radius: 8px
+    padding: 0px 61px 0px 10px
+    width: 330px
+    border: none
+    font-family: Roboto,sans-serif
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+
+    &:focus
+        outline: none
+        border: 1px #3e3d45fc solid
+
+.button__search
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    border: 0
+    background-color: transparent
+    cursor: pointer
+    border-radius: 8px
+    padding: 10px 15px 10px 15px
+
+.image__search
+    width: 22px
+    height: 22px
+
+//main aside
+
+.main__aside
+    background: #17161B
+    height: 100vh
+    z-index: 2
+    color: #fff
+    align-items: left
+    width: 418px
+
+.aside__info
+    display: flex
+
+    align-items: center
+
+.aside__title
+    +regular
+
+.aside__sort
+    margin-left: 156px
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 16.41px
+.aside__sort-text
+    display: block
+    color: #FFFFFF66
+.aside__sort-select
+    display: flex
+    align-items: center
+    margin-left: 15px
+    font-size: 14px
+    line-height: 16.41px
+
+.aside_sort-batton
+    display: block
+    margin-left: 6px
+    width: 12px
+    height: 14px
+.aside_sort-batton:hover
+    transform: scale(1.3)
+
+// aside__trailer
+.aside__trailer
+    padding-right: 43px
+    position: fixed
+    overflow-y: auto
+    flex-direction: column
+    display: flex
+    height: calc(100% - 55%)
+
+.aside__trailer-item
+    height: 100%
+    margin-top: 30px
+    padding: 19px 0px 19px 19px
+    text-align: center
+    width: 371px
+    background: url('../image/aside_cover.png') 0 0/100% no-repeat
+
+.aside__trailer-views
+    +views
+    text-align: left
+    margin-bottom: 34px
+.aside__trailer-name
+    +name
+
+.play-img
+    max-width: 30px
+    max-height: 30px
+
+.aside__trailer-info
+    margin-top: 5px
+    text-align: left
+
+.aside__trailer-date
+    +date
+    margin-top: 5px
+
+/* width */
+::-webkit-scrollbar
+    width: 3px
+    background: #1c1b1f
+
+/* Track */
+::-webkit-scrollbar-track
+    box-shadow: inset 0 0 5px #5d00de00
+    border-radius: 10px red
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: #fefefe
+    border-radius: 10px
+
+//genre
+.aside__genre
+    padding: 25px 0px 40px 24px
+    position: absolute
+    background-color: #1c1b1f
+    bottom: 0
+    width: 418px
+
+.aside__favorite-title
+    +regular
+
+.aside__favorite-nav
+    display: flex
+    flex-wrap: wrap
+
+.aside__favorite-btn
+    margin: 25px 30px 0px 0px
+    border-radius: 100px
+    background-color: #8066F6
+    padding: 5px 10px
+
+.aside__favorite-btn:nth-child(2n)
+    background-color: #E1784F
+.aside__favorite-btn:nth-child(5n)
+    background-color: #63CFE1
+
+.aside__add-title
+    margin-top: 30px
+    +regular
+    font-size: 14px
+    line-height: 14px
+
+.aside__add-nav
+    +regular
+    font-size: 12px
+    line-height: 14px
+    display: flex
+    flex-wrap: wrap
+
+.aside__add-btn
+    margin: 25px 30px 0px 0px
+    border-radius: 100px
+    background: #2B2A2F
+    padding: 5px 10px
+
+// hero
+
+.main__hero
+    margin-left: 36px
+
+.hero__trailer-views
+    +views
+    margin-bottom: 22px
+    text-align: left
+
+.hero__trailer-name
+    +name
+    margin-bottom: 5px
+
+.hero__trailer-date
+    +date
+
+.hero__play-btn
+    display: flex
+
+.play-img
+    max-width: 30px
+    max-height: 30px
+
+// main slider
+
+.main-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.swiper
+    width: 962px
+    height: 202px
+    border-radius: 20px
+
+.swiper-slide
+    background: url('../image/hero_cover.png') 0 0/100% no-repeat
+    padding: 19px 0px 19px 19px
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: left
+    font-size: 18px
+    background-color: #f8eaea39
+
+.swiper-slide img
+    display: block
+    width: 100%
+    height: 100px
+    object-fit: cover
+
+.swiper-scrollbar-drag
+    cursor: pointer
+    background-color: #0400f3
+
+.image-slider .swiper-slide
+    height: calc((100% - 30px) / 2)
+    overflow: hidden
+
+.swiper-pagination-bullet
+    background-color: #fff
